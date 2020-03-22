@@ -1,0 +1,24 @@
+server:
+  port: 8888
+  
+spring: 
+#整合thymleaf
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    check-template: true
+    check-template-location: true
+    enabled: true
+#    prefix: classpath:/templates/
+#    suffix: .html
+#加载banner
+  banner: 
+    charset: utf-8
+    location: 
+      classpath: banner.txt
+  
+  freemarker:
+    cache: false
+    charset: utf-8
+    template-loader-path: classpath:/templates/
+    suffix: .ftl
